@@ -9,11 +9,11 @@ import org.etu.psa.fuzzysearch.objects.Options;
 import org.etu.psa.fuzzysearch.objects.Word;
 
 public abstract class DictionarySearcher implements ISearcher {
-	protected String[] dictionary;
+	protected List<String> dictionary;
 	protected List<Word> result;
 	protected Options options;
 	
-	public DictionarySearcher(String[] dictionary, Options options) {
+	public DictionarySearcher(List<String> dictionary, Options options) {
 		this.dictionary = dictionary;
 		this.options = options;
 		result = new ArrayList<Word>();

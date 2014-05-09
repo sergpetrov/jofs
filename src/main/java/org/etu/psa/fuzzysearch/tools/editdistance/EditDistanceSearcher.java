@@ -9,7 +9,7 @@ import org.etu.psa.fuzzysearch.tools.DictionarySearcher;
 public class EditDistanceSearcher extends DictionarySearcher {
 	private IEditDistance editDistance;
 	
-	public EditDistanceSearcher(String[] dictionary, IEditDistance editDistance, Options options) {
+	public EditDistanceSearcher(List<String> dictionary, IEditDistance editDistance, Options options) {
 		super(dictionary, options);
 		this.editDistance = editDistance;
 	}

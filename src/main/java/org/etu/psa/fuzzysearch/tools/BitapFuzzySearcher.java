@@ -5,10 +5,10 @@ import java.util.List;
 import org.etu.psa.fuzzysearch.objects.Options;
 import org.etu.psa.fuzzysearch.objects.Word;
 
-public class BitapFuzzySeacher extends DictionarySearcher {
+public class BitapFuzzySearcher extends DictionarySearcher {
 	protected final IAlphabet alphabet;
 
-	public BitapFuzzySeacher(String[] dictionary, IAlphabet alphabet, Options options) {
+	public BitapFuzzySearcher(List<String> dictionary, IAlphabet alphabet, Options options) {
 		super(dictionary, options);
 		this.alphabet = alphabet;
 	}
